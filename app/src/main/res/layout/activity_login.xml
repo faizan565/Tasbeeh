@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:paddingBottom="50dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_tasbeeh" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:textColor="#0059b3"
+        android:textSize="25sp" />
+
+
+
+    <EditText
+        android:id="@+id/loginPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:hint="Enter Phone no"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:textColor="#0059b3"
+        android:textColorHint="@color/colorPrimary"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPhone"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#0059b3"
+        android:textColorHint="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginPassword"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:text="Signin"
+        android:background="@drawable/custom_button"
+        >
+
+    </Button>
+
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

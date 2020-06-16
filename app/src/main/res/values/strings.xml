@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tasbeeh</string>
+    <string name="GPSAlertDialogTitle" />
+    <string name="GPSAlertDialogMessage" />
+    <string name="action_settings" />
+    <string name="cancel" />
+</resources>
